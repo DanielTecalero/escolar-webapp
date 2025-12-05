@@ -155,7 +155,7 @@ export class AdministradoresService {
     } else {
       headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     }
-    return this.http.post<any>(`${environment.url_api}/admin/`,data, { headers });
+    return this.http.post<any>(`${environment.url_api}/create-admin/`,data, { headers });
   }
 
   // Petición para obtener la lista de administradores
@@ -182,7 +182,7 @@ export class AdministradoresService {
       headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       console.log("No se encontró el token del usuario");
     }
-    return this.http.get<any>(`${environment.url_api}/admin/?id=${idAdmin}`, { headers });
+    return this.http.get<any>(`${environment.url_api}/create-admin/?id=${idAdmin}`, { headers });
   }
 
   public actualizarAdmin(data: any): Observable<any>{
@@ -194,7 +194,7 @@ export class AdministradoresService {
       headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       console.log("No se encontró el token del usuario");
     }
-    return this.http.put<any>(`${environment.url_api}/admin/`, data, { headers });
+    return this.http.put<any>(`${environment.url_api}/create-admin/`, data, { headers });
   }
 
   // Petición para eliminar un administrador
@@ -207,7 +207,7 @@ export class AdministradoresService {
       headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       console.log("No se encontró el token del usuario");
     }
-    return this.http.delete<any>(`${environment.url_api}/admin/?id=${idAdmin}`, { headers });
+    return this.http.delete<any>(`${environment.url_api}/create-admin/?id=${idAdmin}`, { headers });
   }
 
   // Servicio para obtener el total de usuarios registrados por rol
