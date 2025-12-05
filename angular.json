@@ -53,11 +53,6 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "4mb",
                   "maximumError": "8mb"
-                },
-                {
-                  "type": "allScript",
-                  "maximumWarning": "10mb",
-                  "maximumError": "15mb"
                 }
               ],
                 "fileReplacements": [
